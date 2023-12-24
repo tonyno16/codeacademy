@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue; /* Custom color */
+}
+
+header, footer {
+    background-color: navy; /* Custom color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+code {
+    font-family: "Courier New", monospace; /* Fixed-width font */
+    background-color: lightgrey; /* Different background for code */
+    padding: 2px 4px;
+}
