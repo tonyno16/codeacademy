@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Fixed Header with logo and navigation links -->
+    <div class="header-fixed">
+        <img id="logo" src="./img-tea-cozy-logo.png" alt="Logo">
+        <ul>
+          <li><a href="#mission" class="active">Mission</a></li>
+          <li><a href="#featured-tea">Featured Tea</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+    </div>
+    
+    <!-- Mission Section with background image and overlay text -->
+    <div class="mission-section">
+        <div class="text-background">
+          <h2>Our Mission</h2>
+          <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        </div>
+    </div>
+    
+    <!-- Main container for the Tea of the Month section -->
+    <div class="container">
+        <h1>Tea of the Month</h1>
+        <p>What's Steeping at The Tea Cozy?</p>
+        
+        <!-- Selection of teas with images and descriptions -->
+        <div class="tea-selection">
+            <div class="tea-item">
+                <img src="./img-myrtle-ave.jpg" alt="Fall Berry Blitz Tea">
+                <h2>Fall Berry Blitz Tea</h2>
+            </div>
+            <div class="tea-item">
+                <img src="./img-spiced-rum.jpg" alt="Spiced Rum Tea">
+                <h2>Spiced Rum Tea</h2>
+            </div>
+            <div class="tea-item">
+                <img src="./img-donut.jpg" alt="Seasonal Donuts">
+                <h2>Seasonal Donuts</h2>
+            </div>
+            <div class="tea-item">
+                <img src="./img-myrtle-ave.jpg" alt="Myrtle Ave Tea">
+                <h2>Myrtle Ave Tea</h2>
+            </div>
+            <div class="tea-item">
+                <img src="./img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
+                <h2>Bedford Bizarre Tea</h2>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Container for displaying locations -->
+    <div class="locations-container">
+        <h1>Locations</h1>
+        
+        <!-- Cards representing each location -->
+        <div class="card-container">
+            <div class="card">
+                <h3>Downtown</h3>
+                <p>384 West 4th St<br>Suite 108<br>Portland, Maine</p>
+            </div>
+            <div class="card">
+                <h3>East Bayside</h3>
+                <p>3433 Phisherman's Avenue<br>(Northwest Corner)<br>Portland, Maine</p>
+            </div>
+            <div class="card">
+                <h3>Oakdale</h3>
+                <p>515 Crescent Avenue<br>Second Floor<br>Portland, Maine</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer with contact information and copyright notice -->
+    <footer>
+        <h1>The Tea Cozy</h1>
+        <h5>contact@theteacozy.com</h5>
+        <p>917-555-8904</p>
+        <div class="left-aligned" id="copyright">
+          <!-- The year will be inserted by the JavaScript script below -->
+        </div>
+    </footer>
+      
+    <!-- JavaScript to automatically update the copyright year -->
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyright').innerText = 'copyright The Tea Cozy ' + currentYear;
+    </script>
+    
+</body>
+</html>
+

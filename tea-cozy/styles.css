@@ -1,0 +1,206 @@
+/* General styling for the page */
+html {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Body styling, ensuring no additional padding and a consistent opacity */
+body {
+  padding: 0;
+  opacity: 0.9;
+}
+
+/* Logo styling, with a specified height and left margin */
+#logo {
+  height: 50px;
+  margin-left: 10px;
+  float: left;
+}
+
+/* Fixed header styling, defining its position, size, and border */
+.header-fixed {
+  width: 100%;
+  height: 70px; /* Adjust this height as necessary */
+  line-height: 70px; /* Should match the height to vertically center text */
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid seashell; /* Border color */
+  box-sizing: border-box;
+  padding: 0 10px; /* Side padding */
+  z-index: 1000; /* Ensures the header is above other elements */
+  color: black;
+  background-color: black;
+}
+
+/* Navigation list styling */
+.header-fixed ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation list items styling */
+.header-fixed ul li {
+  display: inline;
+  margin-left: 50px; /* Distance between menu items */
+}
+
+/* Navigation link styling */
+.header-fixed ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Navigation link hover and active state styling */
+.header-fixed ul li a:hover, .header-fixed ul li a.active {
+  text-decoration: underline;
+}
+
+/* Mission section styling with a background image */
+.mission-section {
+  background-image: url('./img-mission-background.jpg'); /* Replace with the correct path */
+  height: 700px; /* Height of the section with the image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Vertically aligns content */
+  align-items: center; /* Horizontally aligns content */
+  text-align: center;
+  color: white; /* Text color */
+  position: relative;
+  top: 70px; /* Height of the header */
+}
+
+/* Semi-transparent black background for text */
+.text-background {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px 50px; /* Spacing around the text */
+}
+
+/* Mission section heading styling */
+.mission-section h2 {
+  color: white;
+  font-size: 2em;
+  margin: 0 0 20px 0; /* Space below the h2 */
+}
+
+/* Mission section subheading styling */
+.mission-section h4 {
+  color: white;
+  font-size: 1.5em;
+  margin: 0; /* Removes the default margin */
+  max-width: 1000px; /* Maximum width of the text */
+}
+
+/* Container for centering the content */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  top: 70px; /* Height of the header */
+}
+
+/* Styling for the tea selection display */
+.tea-selection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows items to wrap if there's not enough space */
+  gap: 10px; /* Distance between items */
+}
+
+/* Individual tea item styling */
+.tea-item {
+  width: 300px; /* Width of the photo */
+  margin-bottom: 20px; /* Distance from the title below the photo */
+  text-align: center;
+}
+
+/* Styling for tea item images */
+.tea-item img {
+  width: 300px; /* Width of the photo */
+  height: 200px; /* Height of the photo */
+  object-fit: cover; /* Ensures the image covers the area without distorting its proportions */
+  border-radius: 10px; /* Rounds the corners of the image */
+  margin-bottom: 10px; /* Distance between the image and the title */
+}
+
+/* Responsive design breakpoint for mobile devices */
+@media (max-width: 768px) {
+  .tea-selection {
+      flex-direction: column;
+  }
+
+  .tea-item {
+      width: 100%; /* Takes up the full width of the screen on mobile devices */
+  }
+
+  .tea-item img {
+      width: 100%; /* Image adapts to the width of the container */
+      height: auto; /* Height adjusts proportionally to the width */
+  }
+}
+
+/* Styling for the locations container */
+.locations-container {
+  text-align: center;
+  height: 500px;
+  width: 100%;
+  top: 50px;
+  position: relative;
+  padding: 20px;
+  background-image: url('./img-locations-background.jpg'); /* Replace with the actual image path */
+}
+
+/* Locations container heading styling */
+.locations-container h1 {
+  margin-bottom: 15px;
+}
+
+/* Styling for the card container within the locations section */
+.card-container {
+display: flex;
+justify-content: center;
+gap: 40px;
+}
+
+/* Styling for individual location cards */
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Additional space if the cards wrap */
+}
+
+/* Responsive breakpoint for adjusting card layout on smaller screens */
+@media (max-width: 900px) {
+.card-container {
+    flex-direction: column;
+}
+}
+
+/* Footer styling */
+footer {
+height: 200px;
+position: relative;
+top: 50px;
+}
+
+/* Styling for left-aligned content within the footer */
+.left-aligned {
+position: absolute;
+bottom: 0;
+left: 0;
+}
